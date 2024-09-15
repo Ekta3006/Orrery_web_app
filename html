@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Orrery</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container for the orrery canvas and controls -->
+    <div id="container">
+        <!-- Canvas where Three.js will render the 3D orrery -->
+        <canvas id="orrery" aria-label="Orrery Simulation"></canvas>
+
+        <!-- Zoom controls for the user -->
+        <div id="controls">
+            <button id="zoomIn" aria-label="Zoom in">Zoom In</button>
+            <button id="zoomOut" aria-label="Zoom out">Zoom Out</button>
+        </div>
+    </div>
+
+    <!-- Import Three.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Link to the external JavaScript file where the Three.js code will be -->
+    <script src="script.js"></script>
+</body>
+</html>
